@@ -1,0 +1,38 @@
+{
+  "ids": {
+    "Pacientes": 9,
+    "Agenda": 4,
+    "Psicologos": 7,
+    "Expedientes": 9
+  },
+  "models": {
+    "Pacientes": {
+      "1": "{\"idPaciente\":1,\"nomPaciente\":\"juan jesus\",\"ap1Paciente\":\"vega\",\"ap2Paciente\":\"vega\",\"edadPaciente\":\"20\",\"sexoPaciente\":\"m\"}",
+      "2": "{\"idPaciente\":2,\"nomPaciente\":\"maria de jesus\",\"ap1Paciente\":\"ochoa\",\"ap2Paciente\":\"salas\",\"edadPaciente\":\"30\",\"sexoPaciente\":\"M\"}",
+      "3": "{\"idPaciente\":3,\"nomPaciente\":\"maria luisa\",\"ap1Paciente\":\"ochoa\",\"ap2Paciente\":\"salas\",\"edadPaciente\":\"30\",\"sexoPaciente\":\"M\"}",
+      "5": "{\"idPaciente\":5,\"nomPaciente\":\"israel martin\",\"ap1Paciente\":\"manzo\",\"ap2Paciente\":\"ochoa\",\"edadPaciente\":\"23\",\"sexoPaciente\":\"M\"}",
+      "7": "{\"nomPaciente\":\"Sebastian\",\"ap1Paciente\":\"Figueroa\",\"ap2Paciente\":\"Perez\",\"edadPaciente\":\"15\",\"sexoPaciente\":\"M\",\"idPaciente\":7}"
+    },
+    "Agenda": {
+      "1": "{\"comentario\":\"estrés acumulado\",\"fecha\":\"30 oct 2023\",\"hora\":\"10:30 pm\",\"additionalProp1\":{},\"idAgenda\":1}",
+      "2": "{\"comentario\":\"mucho estrés\",\"fecha\":\"20 oct 2023\",\"hora\":\"10:20 pm\",\"additionalProp1\":{},\"idAgenda\":2}",
+      "3": "{\"comentario\":\"mucho trabajo\",\"fecha\":\"23 oct\",\"hora\":\"10:20\",\"additionalProp1\":{},\"idAgenda\":3}"
+    },
+    "Psicologos": {
+      "1": "{\"idPsicolgo\":1,\"nomPsicolgo\":\"Agustín Fernando\",\"ap1Psicolgo\":\"Iturbide\",\"ap2Psicolgo\":\"Salazar\",\"edadPsicolgo\":\"40\",\"sexoPsicolgo\":\"M\",\"especialidad\":\"TREC\"}",
+      "2": "{\"idPsicolgo\":2,\"nomPsicolgo\":\"Adriana Cristal\",\"ap1Psicolgo\":\"Rodríguez\",\"ap2Psicolgo\":\"Vega\",\"edadPsicolgo\":\"35\",\"sexoPsicolgo\":\"M\",\"especialidad\":\"TREC\"}",
+      "3": "{\"idPsicolgo\":3,\"nomPsicolgo\":\"Jesus Adrian\",\"ap1Psicolgo\":\"Amezcua\",\"ap2Psicolgo\":\"Parra\",\"edadPsicolgo\":\"32\",\"sexoPsicolgo\":\"M\",\"especialidad\":\"Gestalt\"}",
+      "4": "{\"idPsicolgo\":4,\"nomPsicolgo\":\"Abraham\",\"ap1Psicolgo\":\"Levita\",\"ap2Psicolgo\":\"Gonzalez\",\"edadPsicolgo\":\"32\",\"sexoPsicolgo\":\"M\",\"especialidad\":\"Gestalt\"}",
+      "6": "{\"idPsicolgo\":6,\"nomPsicolgo\":\"Jose de Jesus\",\"ap1Psicolgo\":\"Andrade\",\"ap2Psicolgo\":\"Casas\",\"edadPsicolgo\":\"35\",\"sexoPsicolgo\":\"M\",\"especialidad\":\"TREC\"}"
+    },
+    "Expedientes": {
+      "1": "{\"idExpedientes\":1,\"padecimientos\":\"tristeza - miedo\",\"diagnostico\":\"depresion\",\"histClinica\":\"cirugia estomacal\",\"familiograma\":\"completo\",\"seguimiento\":\"activo\"}",
+      "2": "{\"padecimientos\":\"ansiedad\",\"diagnostico\":\"esquizofrenia\",\"histClinica\":\"cirugia rodilla\",\"familiograma\":\"completo\",\"seguimiento\":\"activo\",\"additionalProp1\":{},\"idExpedientes\":2}",
+      "3": "{\"padecimientos\":\"Paranoia\",\"diagnostico\":\"Esquizotípico\",\"histClinica\":\"Hipertenso\",\"familiograma\":\"Incompleto\",\"seguimiento\":\"Cancelado\",\"additionalProp1\":{},\"idExpedientes\":3}",
+      "4": "{\"padecimientos\":\"Sueño alterado\",\"diagnostico\":\"RM\",\"histClinica\":\"Accidente motocicleta\",\"familiograma\":\"Incompleto\",\"seguimiento\":\"Activo\",\"idExpedientes\":4}",
+      "5": "{\"padecimientos\":\"Sin apetito\",\"diagnostico\":\"Hiperactividad\",\"histClinica\":\"Cirujía de nariz\",\"familiograma\":\"Completo\",\"seguimiento\":\"Activo\",\"idExpedientes\":5}",
+      "7": "{\"padecimientos\":\"Violencia social\",\"diagnostico\":\"TLP\",\"histClinica\":\"Cirujía de cadera\",\"familiograma\":\"Completo\",\"seguimiento\":\"Activo\",\"idExpediente\":7}",
+      "8": "{\"padecimientos\":\"Manías no controladas\",\"diagnostico\":\"TOC moderado\",\"histClinica\":\"Cirujía de cabeza\",\"familiograma\":\"Completo\",\"seguimiento\":\"Activo\",\"idExpediente\":8}"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import {Entity, model, property} from '@loopback/repository';
 
 @model({settings: {strict: false}})
+
 export class Pacientes extends Entity {
   @property({
     type: 'number',

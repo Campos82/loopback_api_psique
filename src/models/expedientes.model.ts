@@ -1,18 +1,20 @@
 import {Entity, model, property} from '@loopback/repository';
 
 @model({settings: {strict: false}})
+
 export class Expedientes extends Entity {
+  @property({
+    type: 'number',
+    id: true,
+    generated: true,
+  })
+  idExpediente?: number;
+
   @property({
     type: 'string',
     required: true,
   })
   padecimientos: string;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  idExpedientes: number;
 
   @property({
     type: 'string',
@@ -24,7 +26,7 @@ export class Expedientes extends Entity {
     type: 'string',
     required: true,
   })
-  hist_clinica: string;
+  histClinica: string;
 
   @property({
     type: 'string',
