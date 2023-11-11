@@ -1,4 +1,5 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, belongsTo, model, property} from '@loopback/repository';
+import {Pacientes} from './pacientes.model';
 
 @model({settings: {strict: false}})
 
@@ -40,6 +41,8 @@ export class Expedientes extends Entity {
   })
   seguimiento: string;
 
+  @belongsTo(() => Pacientes, {name: 'expediente_pacientes'})
+  idPaciente: number;
   // Define well-known properties here
 
   // Indexer property to allow additional data
