@@ -20,7 +20,7 @@ import {
 import {Psicologos} from '../models';
 import {PsicologosRepository} from '../repositories';
 
-export class PsicologoControllerController {
+export class PsicologosControllerController {
   constructor(
     @repository(PsicologosRepository)
     public psicologosRepository : PsicologosRepository,
@@ -37,12 +37,12 @@ export class PsicologoControllerController {
         'application/json': {
           schema: getModelSchemaRef(Psicologos, {
             title: 'NewPsicologos',
-            exclude: ['idPsicolgo'],
+            exclude: ['idPsicologo'],
           }),
         },
       },
     })
-    psicologos: Omit<Psicologos, 'idPsicolgo'>,
+    psicologos: Omit<Psicologos, 'idPsicologo'>,
   ): Promise<Psicologos> {
     return this.psicologosRepository.create(psicologos);
   }

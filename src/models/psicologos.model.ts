@@ -1,43 +1,14 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {Usuarios} from './usuarios.model';
 
-@model({settings: {strict: false}})
+@model()
 export class Psicologos extends Entity {
   @property({
     type: 'number',
     id: true,
     generated: true,
   })
-  idPsicolgo?: number;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  nomPsicolgo: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  ap1Psicolgo: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  ap2Psicolgo: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  edadPsicolgo: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  sexoPsicolgo: string;
+  idPsicologo?: number;
 
   @property({
     type: 'string',
@@ -45,11 +16,8 @@ export class Psicologos extends Entity {
   })
   especialidad: string;
 
-  // Define well-known properties here
-
-  // Indexer property to allow additional data
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [prop: string]: any;
+  @belongsTo(() => Usuarios, {name: 'psicologos_usuarios'})
+  idUsuario: number;
 
   constructor(data?: Partial<Psicologos>) {
     super(data);

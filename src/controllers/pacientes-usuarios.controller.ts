@@ -8,31 +8,31 @@ import {
 } from '@loopback/rest';
 import {
   Pacientes,
-  Psicologos,
+  Usuarios,
 } from '../models';
 import {PacientesRepository} from '../repositories';
 
-export class PacientesPsicologosController {
+export class PacientesUsuariosController {
   constructor(
     @repository(PacientesRepository)
     public pacientesRepository: PacientesRepository,
   ) { }
 
-  @get('/pacientes/{id}/psicologos', {
+  @get('/pacientes/{id}/usuarios', {
     responses: {
       '200': {
-        description: 'Psicologos belonging to Pacientes',
+        description: 'Usuarios belonging to Pacientes',
         content: {
           'application/json': {
-            schema: getModelSchemaRef(Psicologos),
+            schema: getModelSchemaRef(Usuarios),
           },
         },
       },
     },
   })
-  async getPsicologos(
+  async getUsuarios(
     @param.path.number('id') id: typeof Pacientes.prototype.idPaciente,
-  ): Promise<Psicologos> {
-    return this.pacientesRepository.pacientes_psicologos(id);
+  ): Promise<Usuarios> {
+    return this.pacientesRepository.pacientes_usuarios(id);
   }
 }

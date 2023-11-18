@@ -1,28 +1,35 @@
 {
   "ids": {
-    "Pacientes": 13,
-    "Agenda": 6,
-    "Psicologos": 11,
-    "Expedientes": 8,
-    "Login": 1
+    "Pacientes": 8,
+    "Agenda": 9,
+    "Psicologos": 2,
+    "Expedientes": 3,
+    "Usuarios": 8
   },
   "models": {
     "Pacientes": {
-      "11": "{\"idPaciente\":11,\"nomPaciente\":\"Eduardo\",\"ap1Paciente\":\"del Monte\",\"ap2Paciente\":\"Gallegos\",\"edadPaciente\":\"18\",\"sexoPaciente\":\"M\",\"idPsicolgo\":9}",
-      "12": "{\"idPaciente\":12,\"nomPaciente\":\"Sebastián Jesús\",\"ap1Paciente\":\"Figueroa\",\"ap2Paciente\":\"Diaz\",\"edadPaciente\":\"22\",\"sexoPaciente\":\"M\",\"idPsicolgo\":8}"
+      "3": "{\"idUsuario\":3,\"idPsicologo\":1,\"idPaciente\":3}",
+      "5": "{\"idUsuario\":5,\"idPsicologo\":1,\"idPaciente\":5}",
+      "6": "{\"idUsuario\":6,\"idPsicologo\":1,\"idPaciente\":6}",
+      "7": "{\"idUsuario\":7,\"idPsicologo\":1,\"idPaciente\":7}"
     },
     "Agenda": {
-      "5": "{\"comentario\":\"Estrés acumulado critico\",\"fecha\":\"12-11-2023\",\"hora\":\"9:00 am\",\"idPaciente\":11,\"idAgenda\":5}"
+      "5": "{\"idAgenda\":5,\"comentario\":\"cambios en la conducta\",\"fecha\":\"12-11-2024\",\"hora\":\"9:00 am\",\"idPaciente\":5}",
+      "7": "{\"idAgenda\":7,\"comentario\":\"Trabajo bajo estres\",\"fecha\":\"12-11-2024\",\"hora\":\"10:00 am\",\"idPaciente\":3}",
+      "8": "{\"comentario\":\"estrés acumulado positivo\",\"fecha\":\"12-11-2024\",\"hora\":\"10:00 am\",\"idPaciente\":7,\"idAgenda\":8}"
     },
     "Psicologos": {
-      "8": "{\"idPsicolgo\":8,\"nomPsicolgo\":\"Isis Ximena\",\"ap1Psicolgo\":\"Amezcua\",\"ap2Psicolgo\":\"Cardenas\",\"edadPsicolgo\":\"41\",\"sexoPsicolgo\":\"F\",\"especialidad\":\"Gestalt\"}",
-      "9": "{\"nomPsicolgo\":\"Nicolas\",\"ap1Psicolgo\":\"Castillo\",\"ap2Psicolgo\":\"Castillo\",\"edadPsicolgo\":\"30\",\"sexoPsicolgo\":\"M\",\"especialidad\":\"TREC\",\"idPsicolgo\":9}",
-      "10": "{\"nomPsicolgo\":\"Natalia\",\"ap1Psicolgo\":\"Garcia\",\"ap2Psicolgo\":\"Torres\",\"edadPsicolgo\":\"34\",\"sexoPsicolgo\":\"F\",\"especialidad\":\"TREC\",\"idPsicolgo\":10}"
+      "1": "{\"especialidad\":\"TREC\",\"idUsuario\":1,\"idPsicologo\":1}"
     },
     "Expedientes": {
-      "6": "{\"idExpediente\":6,\"padecimientos\":\"Actitud defensiva\",\"diagnostico\":\"Impulsividad mayor cambiante\",\"histClinica\":\"Sinusitis crónica\",\"familiograma\":\"Completo\",\"seguimiento\":\"Activo\",\"idPaciente\":11}",
-      "7": "{\"padecimientos\":\"Ansiedad atípica\",\"diagnostico\":\"TLP avanzado\",\"histClinica\":\"Epilepsia infantil\",\"familiograma\":\"Incompleto\",\"seguimiento\":\"Activo\",\"idPaciente\":12,\"idExpediente\":7}"
+      "2": "{\"idExpediente\":2,\"padecimientos\":\"Conducta violenta\",\"diagnostico\":\"RM TOC\",\"histClinica\":\"Mareos, vomitos\",\"familiograma\":\"completo\",\"seguimiento\":\"Activo\",\"idPaciente\":5}"
     },
-    "Login": {}
+    "Usuarios": {
+      "1": "{\"nombre\":\"Alicia\",\"ap1\":\"Vega\",\"ap2\":\"Sandoval\",\"edad\":\"31\",\"sexo\":\"F\",\"tipo\":\"PSI\",\"correo\":\"alicia@gamail.com\",\"contrasena\":\"123\",\"idUsuario\":1}",
+      "3": "{\"idUsuario\":3,\"nombre\":\"Ximena Lucia\",\"ap1\":\"Blanco\",\"ap2\":\"Martinez\",\"edad\":\"31\",\"sexo\":\"F\",\"tipo\":\"PX\",\"correo\":\"ximena@gmail.com\",\"contrasena\":\"123\"}",
+      "5": "{\"nombre\":\"Juan Armando\",\"ap1\":\"Castro\",\"ap2\":\"Salceda\",\"edad\":\"33\",\"sexo\":\"M\",\"tipo\":\"PX\",\"correo\":\"armando@castro.com\",\"contrasena\":\"123\",\"idUsuario\":5}",
+      "6": "{\"nombre\":\"Jose Luis\",\"ap1\":\"Ochoa\",\"ap2\":\"Vega\",\"edad\":\"21\",\"sexo\":\"M\",\"tipo\":\"PX\",\"correo\":\"luis@ochoa.com\",\"contrasena\":\"123\",\"idUsuario\":6}",
+      "7": "{\"nombre\":\"Lucia\",\"ap1\":\"Mendez\",\"ap2\":\"Castro\",\"edad\":\"42\",\"sexo\":\"F\",\"tipo\":\"PX\",\"correo\":\"lucia@mendez.com\",\"contrasena\":\"123\",\"idUsuario\":7}"
+    }
   }
 }
